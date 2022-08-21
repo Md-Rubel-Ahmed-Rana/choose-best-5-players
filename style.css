@@ -1,3 +1,10 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
 header .container{
     background-image: url("./players/banner.webp");
     background-repeat: no-repeat;
@@ -5,8 +12,9 @@ header .container{
     background-position: center;
     height: 70vh;
     width: 90vw;
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 20px 0px;
+    border-radius: 20px;
     
 }
 
@@ -23,10 +31,11 @@ header .container > h1{
     display: flex;
     gap: 20px;
     padding: 50px;
-    background-color: #000000e0;
+    background-color: #220537ed;
     color: white;
     width: 85%;
     margin: auto;
+    border-radius: 20px;
 }
 
 .player-div{
@@ -52,10 +61,17 @@ header .container > h1{
     width: 100%;
     padding: 10px 5px;
     font-size: 20px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .hiring-div{
     padding: 20px;
+    border-left: 5px solid;
 }
 
 .player-list h1{
@@ -88,7 +104,8 @@ ol li{
     color: white;
     padding: 10px 30px;
     font-size: 30px;
-    width: 255px;
+    width: 300px;
+    border-radius: 10px;
 }
 
 .budget-div h2 {
@@ -120,5 +137,9 @@ ol li{
     padding: 10px 30px;
     font-size: 30px;
     width: 300px;
+    border-radius: 10px;
 }
 
+button{
+    font-family: 'Roboto Slab',serif;
+}
