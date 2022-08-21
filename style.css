@@ -1,0 +1,20 @@
+header .container{
+    background-image: url("./players/banner.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    width: 90vw;
+    margin: 50px auto;
+    padding: 20px 0px;
+    
+}
+
+header .container > h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 60px;
+    background-color: blue;
+    padding: 10px 0px;
+}
