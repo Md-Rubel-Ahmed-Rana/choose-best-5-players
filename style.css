@@ -18,3 +18,105 @@ header .container > h1{
     background-color: blue;
     padding: 10px 0px;
 }
+
+.player-section{
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+    background-color: #000000e0;
+    color: white;
+}
+
+.player-div{
+    width: 90%;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.card{
+   padding: 20px;
+   text-align: center;
+   background-color: #00ffff4f;
+   border-radius: 10px;
+}
+.card img{
+    height: 150px;
+    width: 100%;
+}
+.card button{
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 20px;
+}
+
+.hiring-div{
+    padding: 20px;
+}
+
+.player-list h1{
+    text-align: center;
+    border-bottom: 5px solid red;
+    padding: 5px;
+    font-size: 30px;
+}
+
+ol li{
+    font-size: 25px;
+    margin: 10px 0px;
+}
+
+.budget-div h1{
+    font-size: 30px;
+}
+.budget-div input, label{
+    padding: 10px;
+    font-size: 20px;
+    width: 100px;
+}
+.budget-div label{
+    font-size: 25px;
+}
+.budget-div button{
+    display: block;
+    margin: 10px 7px;
+    background-color: blue;
+    color: white;
+    padding: 10px 30px;
+    font-size: 30px;
+    width: 255px;
+}
+
+.budget-div h2 {
+    font-size: 25px;
+}
+
+.total-cost-div h1{
+    font-size: 30px;
+}
+
+.total-cost-div input{
+    padding: 6px;
+    margin: 10px 5px;
+    width: 100px;
+    font-size: 20px;
+}
+.total-cost-div label{
+    font-size: 27px;
+}
+.coach{
+    margin-right: 25px;
+}
+
+.total-cost-div button{
+    display: block;
+    margin: 10px 7px;
+    background-color: blue;
+    color: white;
+    padding: 10px 30px;
+    font-size: 30px;
+    width: 300px;
+}
+
