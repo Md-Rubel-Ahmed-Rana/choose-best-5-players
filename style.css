@@ -25,6 +25,8 @@ header .container > h1{
     padding: 50px;
     background-color: #000000e0;
     color: white;
+    width: 85%;
+    margin: auto;
 }
 
 .player-div{
