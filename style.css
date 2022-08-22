@@ -14,7 +14,7 @@ header .container{
     width: 85.5vw;
     margin: 20px auto;
     padding: 20px 0px;
-    border-radius: 20px;
+    border-radius: 10px;
     
 }
 
@@ -35,7 +35,7 @@ header .container > h1{
     color: white;
     width: 85%;
     margin: 0px auto;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .player-div{
