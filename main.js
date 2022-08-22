@@ -17,7 +17,7 @@ const buttons = document.getElementsByClassName("button");
         button.style.backgroundColor = "#8080806b";
         button.style.cursor = "none";
         orderList.appendChild(listItem);
-    })
+      })
  }
 
  const getInputValueById = (inputFieldId) => {
@@ -28,14 +28,21 @@ const buttons = document.getElementsByClassName("button");
     return inputFieldValue;
  }
 
- // get the player budget input
+ // get and calculate the player budget.
  document.getElementById("calc-player-budget").addEventListener("click", () => {
     const perPlayerBudget = getInputValueById("per-player-budget");
     const totalPlayerBudget = perPlayerBudget * 5;
 
+     //Validate input field value
+     const inputValue =  document.getElementById("per-player-budget");
+      if(inputValue.value == ""){
+         alert("Player budget is emptry");
+         return;
+      }
     const playerExpenseElement = document.getElementById("player-expense-total");
     playerExpenseElement.innerText = totalPlayerBudget;
  });
+
 
  document.getElementById("calc-total-cost").addEventListener("click", () => {
     const managerCost = getInputValueById("manager-cost");
@@ -47,6 +54,14 @@ const buttons = document.getElementsByClassName("button");
 
     const getTotalCost = totalPlayerCost + managerCost + coachCost;
 
+
+    //Validate input field value
+    const managerInput =  document.getElementById("manager-cost");
+    const coachInput =  document.getElementById("coach-cost");
+      if(managerInput.value == "" || coachInput.value == ""){
+         alert("Input field is emptry");
+         return;
+      }
     const calculateTotalCostElement = document.getElementById("total-cost");
     calculateTotalCostElement.innerText = getTotalCost
  })
