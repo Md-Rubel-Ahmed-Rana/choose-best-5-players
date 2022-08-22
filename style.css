@@ -30,7 +30,7 @@ header .container > h1{
 .player-section{
     display: flex;
     gap: 20px;
-    padding: 50px;
+    padding: 20px;
     background-color: #220537ed;
     color: white;
     width: 85%;
