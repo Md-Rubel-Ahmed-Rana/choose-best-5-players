@@ -28,6 +28,14 @@ const buttons = document.getElementsByClassName("button");
     return inputFieldValue;
  }
 
+const getTextElementValueById = (elementId) => {
+   const totalPlayerCostElement = document.getElementById(elementId);
+    const totalPlayerCostString = totalPlayerCostElement.innerText;
+    const totalPlayerCost = parseInt(totalPlayerCostString);
+
+    return totalPlayerCost;
+}
+
  // get and calculate the player budget.
  document.getElementById("calc-player-budget").addEventListener("click", () => {
     const perPlayerBudget = getInputValueById("per-player-budget");
@@ -47,13 +55,8 @@ const buttons = document.getElementsByClassName("button");
  document.getElementById("calc-total-cost").addEventListener("click", () => {
     const managerCost = getInputValueById("manager-cost");
     const coachCost = getInputValueById("coach-cost");
-
-    const totalPlayerCostElement = document.getElementById("player-expense-total");
-    const totalPlayerCostString = totalPlayerCostElement.innerText;
-    const totalPlayerCost = parseInt(totalPlayerCostString);
-
+    const totalPlayerCost = getTextElementValueById("player-expense-total");
     const getTotalCost = totalPlayerCost + managerCost + coachCost;
-
 
     //Validate input field value
     const managerInput =  document.getElementById("manager-cost");
@@ -63,5 +66,5 @@ const buttons = document.getElementsByClassName("button");
          return;
       }
     const calculateTotalCostElement = document.getElementById("total-cost");
-    calculateTotalCostElement.innerText = getTotalCost
+    calculateTotalCostElement.innerText = getTotalCost;
  })
