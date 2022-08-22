@@ -34,7 +34,7 @@ header .container > h1{
     background-color: #220537ed;
     color: white;
     width: 85%;
-    margin: auto;
+    margin: 0px auto;
     border-radius: 20px;
 }
 
@@ -73,21 +73,33 @@ header .container > h1{
     padding: 20px;
     border-left: 5px solid;
 }
-
+.player-list{
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
 .player-list h1{
     text-align: center;
     border-bottom: 5px solid red;
     padding: 5px;
     font-size: 30px;
+    margin: 0px auto;
+    width: 220px;
 }
 
 ol li{
     font-size: 25px;
     margin: 10px 0px;
 }
-
+.budget-div{
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+}
 .budget-div h1{
     font-size: 30px;
+    border-bottom: 3px solid red;
+    width: 100px;
 }
 .budget-div input, label{
     padding: 10px;
@@ -112,8 +124,15 @@ ol li{
     font-size: 25px;
 }
 
+.total-cost-div{
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
 .total-cost-div h1{
     font-size: 30px;
+    border-bottom: 3px solid red;
+    width: 145px;
 }
 
 .total-cost-div input{
@@ -142,4 +161,10 @@ ol li{
 
 button{
     font-family: 'Roboto Slab',serif;
+    cursor: pointer;
+}
+
+li{
+    border-bottom: 2px solid;
+    width: 185px;
 }

@@ -20,7 +20,7 @@ const buttons = document.getElementsByClassName("button");
     })
  }
 
- const getInputValue = (inputFieldId) => {
+ const getInputValueById = (inputFieldId) => {
     const inputField = document.getElementById(inputFieldId);
     const inputFieldString = inputField.value;
     const inputFieldValue = parseInt(inputFieldString);
@@ -30,11 +30,7 @@ const buttons = document.getElementsByClassName("button");
 
  // get the player budget input
  document.getElementById("calc-player-budget").addEventListener("click", () => {
-    // const playerBudgetField = document.getElementById("per-player-budget");
-    // const playerBudgetString = playerBudgetField.value;
-    // const playerBudget = parseInt(playerBudgetString);
-
-    const perPlayerBudget = getInputValue("per-player-budget");
+    const perPlayerBudget = getInputValueById("per-player-budget");
     const totalPlayerBudget = perPlayerBudget * 5;
 
     const playerExpenseElement = document.getElementById("player-expense-total");
@@ -42,8 +38,8 @@ const buttons = document.getElementsByClassName("button");
  });
 
  document.getElementById("calc-total-cost").addEventListener("click", () => {
-    const managerCost = getInputValue("manager-cost");
-    const coachCost = getInputValue("coach-cost");
+    const managerCost = getInputValueById("manager-cost");
+    const coachCost = getInputValueById("coach-cost");
 
     const totalPlayerCostElement = document.getElementById("player-expense-total");
     const totalPlayerCostString = totalPlayerCostElement.innerText;
