@@ -25,6 +25,7 @@ const buttons = document.getElementsByClassName("button");
       })
  }
 
+// get input value from an input element
  const getInputValueById = (inputFieldId) => {
     const inputField = document.getElementById(inputFieldId);
     const inputFieldString = inputField.value;
@@ -33,6 +34,7 @@ const buttons = document.getElementsByClassName("button");
     return inputFieldValue;
  }
 
+// get html text value by element id 
 const getTextElementValueById = (elementId) => {
    const totalPlayerCostElement = document.getElementById(elementId);
     const totalPlayerCostString = totalPlayerCostElement.innerText;
