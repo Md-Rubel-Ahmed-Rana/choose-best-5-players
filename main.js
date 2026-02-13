@@ -1,4 +1,4 @@
-
+// need to add more functionalities in future
 // get player numbers dynamically to get player budget;
 let playerNumber = 0;
 const buttons = document.getElementsByClassName("button");
